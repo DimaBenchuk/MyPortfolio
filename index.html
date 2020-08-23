@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Дима Бенчук</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -49,7 +51,7 @@
                         <p class="intro__text wow fadeInRight" data-wow-delay="0.4s">
                             Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта.
                         </p>
-                        <button href="" class="btn intro__btn wow fadeInRight" data-wow-delay="0.5s">Посмотреть портфолио</button>
+                        <button href="" class="btn intro__btn wow fadeInRight" data-wow-delay="0.5s" data-scroll="#projects">Посмотреть портфолио</button>
                     </div>
                     <div class="intro__avatar wow fadeIn" data-wow-delay="1.3s">
                         <img class="intro__photo" src="./img/MyPhoto.jpg" alt="">
@@ -68,33 +70,15 @@
                 <div class="features__block">
 
                     <div class="features__item">
-                        <img src="./img/features/1.svg" alt="По договору" class="features__image">
-                        <h3 class="featires__title">По договору</h3>
-                        <p class="features__text">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
-                    </div>
-
-                    <div class="features__item">
                         <img src="./img/features/2.svg" alt="Точно в срок" class="features__image">
                         <h3 class="featires__title">Точно в срок</h3>
                         <p class="features__text">В договоре прописана моя  ответственность за срок проекта. Если просрочу — плачу неустойку.</p>
                     </div>
 
                     <div class="features__item">
-                        <img src="./img/features/3.svg" alt="Ценник под вас" class="features__image">
-                        <h3 class="featires__title">Ценник под вас</h3>
-                        <p class="features__text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
-                    </div>
-
-                    <div class="features__item">
                         <img src="./img/features/4.svg" alt="Премежуточные итоги" class="features__image">
                         <h3 class="featires__title">Премежуточные итоги</h3>
                         <p class="features__text">Показываю работу поэтапно, а не в последий момент перед крайним сроком.</p>
-                    </div>
-
-                    <div class="features__item">
-                        <img src="./img/features/5.svg" alt="Хостинг и домен" class="features__image">
-                        <h3 class="featires__title">Хостинг и домен</h3>
-                        <p class="features__text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.</p>
                     </div>
 
                     <div class="features__item">
@@ -111,7 +95,7 @@
         <!-- /.features -->
 
         <!-- projects -->
-        <section class="section projects">
+        <section class="section projects" id="projects">
             <div class="container">
                 <h2 class="section-title">Последние проекты</h2>
 
@@ -119,7 +103,26 @@
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+
                         <!-- Slides -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="project-image">
+                                <img src="./img/projects/IT-company.png" alt="IT-company" class="project-photo project-photo-two"> 
+                                <div class="project-look">
+                                    <a href="https://dimabenchuk.github.io/IT-company/" target="_blank" class="project-btn">Посмотреть</a>
+                                </div>
+                            </div>
+                            <div class="project-text">
+                                <h3 class="project-title">Самостоятельная работа: cайт для IT компании</h3>
+                                <div class="project-feedback">
+                                    <img src="./img/projects/description-icon.svg" alt="Отзыв" class="project-icon">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Описание</h4>
+                                        <p class="project-paragraph">---</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="swiper-slide projects-slide">
                             <div class="project-image">
                                 <img src="./img/projects/SpaceX.png" alt="SpaceX" class="project-photo">
@@ -177,8 +180,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">Slide 3</div>
-                        ...
+
                     </div>
                     <!-- If we need pagination -->
                     <div class="projects-pagination"></div>
